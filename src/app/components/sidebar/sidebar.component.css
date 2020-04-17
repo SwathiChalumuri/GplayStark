@@ -1,0 +1,40 @@
+.example-container {
+    /* width: 222px; */
+    height: 700px;
+    /* margin-top: 68px; */
+    /* position: fixed; */
+  }
+  
+  
+
+  .borderblog{
+    margin-left: 20px;
+    width:180px;
+    height:1px;
+    border-bottom: 1px dotted black;
+   }
+  
+  .sideapps{
+    background-color: olivedrab;
+    padding: 6px;
+  }
+  .cont{
+    margin-top: 70px;
+  }
+  .hov1{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 12px;
+  }
+  .hov1:hover{
+    background-color: lightgreen;
+  }
+  .hov{
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 12px;
+  }
+  .hov:hover{
+    background-color: #f1f1f1;
+  }

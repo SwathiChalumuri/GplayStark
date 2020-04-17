@@ -1,0 +1,85 @@
+<!-- <div fxLayout="column"> -->
+
+        <div class="header" fxLayout="row" fxLayoutGap="2px" fxFlex="100">
+                <div fxShow.xs fxHide.lg fxLayoutAlign.xs="end end">
+                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>menu</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                            <button mat-menu-item>
+                              <!-- <mat-icon>dialpad</mat-icon> -->
+                              <span>My apps</span>
+                            </button>
+                            <button mat-menu-item>
+                              <!-- <mat-icon>voicemail</mat-icon> -->
+                              <span>Shop</span>
+                            </button>
+                            <button mat-menu-item>
+                              <!-- <mat-icon>notifications_off</mat-icon> -->
+                              <span>Games</span>
+                            </button>
+                            <button mat-menu-item>
+                                    <span>Family</span>
+                                  </button>
+                                  <button mat-menu-item>
+                                    <span>Editor's choice</span>
+                                    </button>
+                          </mat-menu>
+
+
+                    </div>
+                <div fxLayoutGap="10%" fxFlex="25" fxLayout="row" fxLayout.xs="row-reverse" fxLayoutAlign.xs="end">
+                    <div>
+                        <img class="gicon" src="assets/images/google image.png" alt="Google Play Logo">
+                       
+                    </div>
+                    
+                </div>
+                <div fxFlex="35" fxHide.xs>
+                        <div fxLayout="row">
+                                <!-- <input class="inp" type="text" placeholder="Search" [(ngModel)]="search"> -->
+                                <!-- <input class="inp" type="text" placeholder="Search" (input)="onSearchChange($event.target.value)"> -->
+                                <input class="inp" type="text" placeholder="Search" [(ngModel)]="search" (ngModelChange)="onSearchChange($event)">    
+                                <!-- <input class="inp" type="text" placeholder="Search" [(ngModel)]="search" (keypress)="onSearchChange($event.target.value)"> -->
+                                <!-- <input class="inp" type="text" placeholder="Search" [(ngModel)]="search" (change)="onSearchChange($event)">  -->
+
+                                <button id="butt" (click)="submit()">
+                                    <mat-icon  >search</mat-icon>
+                                </button>
+                                  </div>
+                            
+                    <!-- <button id="butt"> -->
+                        <!-- <img class="searchIcon" src="assets/images/search icon.jpg" /> -->
+                        
+                    <!-- </button> -->
+                </div>
+                <div fxLayoutAlign="end center"  fxFlex="45" fxLayout="row"  fxLayoutGap="10%">
+                    <div fxHide.xs>
+                        <img class="apicon" src="assets/images/apps icon.png">
+                    </div>
+                    <div fxHide.xs>
+                        <button mat-raised-button id="butt-sgn">Sign In</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div fxLayout="row">
+                <div fxFlex="13">
+                        <app-sidebar></app-sidebar>
+                </div>
+               
+                <div fxLayout="column" fxFlex="87" class="cont">
+                    <div >
+                            <app-content></app-content>
+                    </div>
+                    <div>
+                        <app-maincontent></app-maincontent>
+                    </div>
+                        
+                </div>
+                
+            </div> -->
+<!-- </div> -->
+
+
+
+

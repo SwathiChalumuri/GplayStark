@@ -1,0 +1,33 @@
+<div fxLayout="row wrap" class="appAlign">
+   <p style="font-size: 40px;">Apps</p>
+</div>
+<div fxLayout="row wrap" fxLayoutGap="2%" fxLayoutAlign="space-around center">
+    <div *ngFor="let apps of arr">
+        <mat-card class="appdata">
+            <div fxLayout="row" >
+                <div fxFlex="55" fxLayout="column" fxLayoutAlign="center start">
+                        <mat-card-header *ngIf="apps.image==''">
+                                <img class="image" mat-card-image src="assets/images/not found1.jfif">
+                        </mat-card-header>
+                        <mat-card-header *ngIf="!apps.image==''">
+                            <img class="image" mat-card-image src="{{apps.image}}">
+                       </mat-card-header>
+                </div>
+                <div fxFlex="45" fxLayout="column" fxLayoutAlign="space-evenly center" >
+                   <div style="font-size: 20px; white-space: nowrap;">
+                        <b>{{apps.name}}</b>
+                   </div>
+                   <div>
+                        {{apps.company}}
+                   </div>
+                   <div>
+                        {{apps.status}}
+                   </div>
+                </div>
+
+            </div>
+           
+        </mat-card>
+    </div>
+    
+</div>

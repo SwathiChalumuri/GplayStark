@@ -1,0 +1,20 @@
+
+.appdata{
+    width: 425px;
+    height: 158px;
+    /* background-color: coral; */
+    margin-bottom: 2%;
+}
+.image{
+    width: 218px;
+    height: 156px;
+}
+
+mat-card{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.appAlign{
+    margin-left: 40px;
+}

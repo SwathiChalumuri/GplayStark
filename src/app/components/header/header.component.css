@@ -1,0 +1,48 @@
+.header{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 67px;
+    /* display: flex; */
+    top: 0;
+    left: 0;
+    /* position: absolute;  */
+}
+.gicon{
+    width: 241px;
+    height: 58px;
+    padding: 0px 30px;
+    /* margin-top: 12px; */
+    /* margin: 12px 0 0 28px; */
+}
+.inp{
+    width: 660px;
+    height: 25px;
+    margin-top: 16px;
+    /* margin-right: 58px; */
+    /* margin: 16px 0 0 96px; */
+}
+#butt{
+    background-color: #4386f8;
+    width: 60px;
+    height: 30px;
+    margin-top: 16px;
+}
+.searchIcon{
+    width: 68%;
+    height: 106%;
+}
+.apicon{
+    width: 22px;
+    height: 19px;
+}
+#butt-sgn{
+    width: 69px;
+    height: 30px;
+    background-color: #4386f8;
+}
+.cont{
+    margin-top: 70px;
+  }
+ /* .menumini{
+     
+ } */
